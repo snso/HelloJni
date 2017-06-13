@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/showInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="------" />
+
+    <Button
+        android:id="@+id/btn_on"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="led_on" />
+
+    <Button
+        android:id="@+id/btn_off"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="led_off" />
+    <Button
+        android:id="@+id/btn_pwm"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="pwm" />
+    
+    <Button
+        android:id="@+id/btn_key"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="key" />
+    
+    <TextView 
+        android:id="@+id/show_key"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="显示按键"/>
+
+</LinearLayout>

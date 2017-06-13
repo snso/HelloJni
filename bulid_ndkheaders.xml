@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- ====================================================================== 
+     2017年3月15日 下午6:18:05                                                        
+
+     HelloWorld    
+     description
+                   
+     Administrator                                                                
+     ====================================================================== -->
+<project name="HelloWorld" default="BuildAllHeaders">
+    <description>
+            description
+    </description>
+
+    <!-- ================================= 
+          target: BuildAllHeaders            
+         ================================= -->
+    <target name="BuildAllHeaders"  >
+        <antcall target="BuildGetString"></antcall>
+    </target>
+	
+	<!-- - - - - - - - - - - - - - - - - - 
+          target: GetString                      
+         - - - - - - - - - - - - - - - - - -->
+    <target name="BuildGetString">
+    	<javah destdir="./jni" classpath="./bin/classes/" class="com.snso.helloworld.GetCinfo"></javah>
+            
+    </target>
+
+
+</project>
